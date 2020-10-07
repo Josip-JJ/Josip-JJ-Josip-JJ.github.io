@@ -1,0 +1,8 @@
+header .mojHeaderLink {
+  color: red;
+  padding: 10px 3rem;
+}
+
+.mojHeaderLink:hover {
+  text-decoration: none;
+}
