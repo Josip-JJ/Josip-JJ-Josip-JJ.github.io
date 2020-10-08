@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link href="style.css" rel="stylesheet" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -22,40 +21,50 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+    <link href="style.css" rel="stylesheet" />
 
     <title>Project</title>
   </head>
   <body>
-    <header>
-      <div>
-        <a class="mojHeaderLink" href="link1.html">Logo</a>
-        <svg
-          width="0.5em"
-          height="0.5em"
-          viewBox="0 0 16 16"
-          class="bi bi-caret-down-fill"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
-          />
-        </svg>
-        <a class="mojHeaderLink" href="link2.html">Naslovna</a>
+    <header class="header">
+      <div class="menu-items">
+        <a class="mojHeaderLink navbar-logo" href="link1.html"> </a>
+
+        <div class="menu-item">
+          <a class="mojHeaderLink" href="link2.html"
+            >Naslovna
+            <svg
+              width="0.5em"
+              height="0.5em"
+              viewBox="0 0 16 16"
+              class="bi bi-caret-down-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              /></svg
+          ></a>
+          <ul class="dropdown-items">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 1</a></li>
+          </ul>
+        </div>
+
         <a class="mojHeaderLink" href="link3.html">O nama</a>
         <a class="mojHeaderLink" href="link4.html">Proizvodi</a>
         <a class="mojHeaderLink" href="link5.html">Kontakt</a>
       </div>
-      <div></div>
-      <a class="mojHeaderLink" href="#" onclick="setLanguage('en')">En</a>
-      <a class="mojHeaderLink" href="#" onclick="setLanguage('hr')">Hr</a>
-    </div>
-    <div>
-      <i class="fab fa-facebook-f"></i></div>
+      <div class="lang-social">
+        <div>
+          <a class="mojHeaderLink" href="#" onclick="setLanguage('en')">En</a>
+          <a class="mojHeaderLink" href="#" onclick="setLanguage('hr')">Hr</a>
+        </div>
+        <div>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
     </header>
-
-    <h1>Hello, world!</h1>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

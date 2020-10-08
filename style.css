@@ -1,8 +1,67 @@
 header .mojHeaderLink {
   color: red;
-  padding: 10px 3rem;
+  padding: 10px 1rem;
 }
-
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar-logo {
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  background-image: url(/images/ee2299a4d7eae72326fef11689c5df49.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all linear 0.16s;
+}
+.navbar-logo:hover {
+  background-image: url(/images/d6a55e0c15b8da392e5cec62039e6e81.png);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: rgb(238, 238, 238);
+  align-items: center;
+}
+.menu-item {
+  display: inline-block;
+  position: relative;
+}
+.menu-item:hover .dropdown-items {
+  display: inline-block;
+}
+.dropdown-items {
+  position: absolute;
+  top: 25px;
+  padding: 10px;
+  background-color: rgb(223, 223, 223);
+  list-style: none;
+  left: 15px;
+  display: none;
+}
 .mojHeaderLink:hover {
   text-decoration: none;
+}
+.lang-social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lang-social .fa-facebook-f {
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  border-radius: 50%;
 }
